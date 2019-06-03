@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QA Demo Page</title>
+    <link rel="stylesheet" href="./reset_reset.min.css" />
+    <script src="./jquery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
+    <script src="./boostrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+    <header>
+
+        <h1>QA Demo Page</h1>
+    </header>
+
+    <div class="card w-75 cardS">
+        <div class="card-body">
+            <h5 class="card-title">Validate Password</h5>
+            <input type="password" name="password" id="password">
+            <input type="password" name="verifyPass" id="verifyPass">
+            <button class="btn btn-primary submit" id="submit" onclick="Validate()" type="submit">Validate</button>
+        </div>
+    </div>
+
+
+
+    <div class="card w-75 cardS">
+        <div class="card-body">
+            <h5 class="card-title">Text - Modal</h5>
+            <textarea name="textArea" id="areaText"></textarea>
+            <div class="btns">
+                <button class="btn btn-primary submit" id="submit" type="submit" onclick="Clear()">Clear</button>
+                <button type="button" class="btn btn-primary submit" data-toggle="modal" data-target="#exampleModal"
+                    onclick="Done()">
+                    Done
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">QA Team</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="text">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card w-75 cardS">
+        <div class="card-body">
+            <h5 class="card-title">Complete the Form</h5>
+            <form id="userData">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Gender</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="Male">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="Female">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Female
+                        </label>
+                    </div>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2">Choose your Country</label>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option value="Mex">Mexico</option>
+                        <option value="usa">USA</option>
+                        <option value="Ind">India</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Review of the page</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="formControlRange">Example Range input</label>
+                    <input type="range" class="form-control-range" id="formControlRange">
+                </div>
+                <button class="btn btn-primary submit" id="FormSubmit" type="submit">Done</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="card w-75 cardS">
+        <div class="card-body">
+            <h5 class="card-title">Drag and Drop</h5>
+            <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <img id="Hexaware" src="./svg/logo.png" draggable="true" ondragstart="drag(event)" width="150" height="69">
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
+

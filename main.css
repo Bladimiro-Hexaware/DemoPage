@@ -1,0 +1,104 @@
+body{
+    background-color: #D1F5FF;
+}
+
+header{
+    background-image: url(./svg/logo.png);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    width: 100%;
+    padding: 6% 30%;
+    text-align: center;
+}
+
+header h1{
+    font-size: 400%;
+}
+
+.login{
+    padding: 2% 19%;
+}
+
+.w-75{
+    left: 24%;
+    width: 54%!important;
+    border-radius: 35px;
+}
+
+.card-title{
+    margin-left: 35%;
+}
+
+.submit{
+    margin-left: 42px;
+    right: 8%;
+}
+
+.cardS{
+    margin-top: 70px;
+    margin-bottom: 6%;
+}
+
+.btns{
+    position: absolute;
+    right: 71px;
+    top: 50%;
+}
+
+#FormSubmit{
+    margin-left: 45%;
+}
+
+#areaText{
+    width: 50%;
+}
+
+#drop{
+    border-radius: 10px;
+    margin-left: 45%;
+    padding: 36px 110px 0 230px;
+    background-color: #c4ebd6;
+}
+
+.dropbtn {
+    background-color: #5da9f0;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3c99f0;}
+
+
+.flex{
+    display: flex;
+}
+.itms{
+    right: -35%;
+}
