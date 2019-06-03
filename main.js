@@ -74,7 +74,3 @@ document.getElementById("userData").addEventListener("submit", function (event) 
     }
     
 });
-
-
-
-$('#draggable').draggable();
