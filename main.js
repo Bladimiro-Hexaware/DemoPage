@@ -1,3 +1,21 @@
+$("#QATitle").attr("title","Hover the title of each cards to get instructions of what to do");
+$("#validateTitle").attr("title","This card validate the two words in the inputs boxes");
+$("#textModalTitle").attr("title","Type any text. The Clear button will empty the text area and the Done button will open a modal with the written text");
+$("#formModal").attr("title","Complete the form to open a new window");
+$("#pageCommentsTitle").attr("title","Type any comment you have about the page (not required)");
+$("#emailTitle").attr("title","Type a valid email address (required)");
+$("#rangeTitle").attr("title","Move the range (not required)");
+$("#dragandDropTitle").attr("title","Drag the Hexaware Logo into the green area");
+$("#rangeTitle").attr("title","Move the range (not required)");
+$("#knowledgeTitlte").attr("title","Select all the technologies that you domain and press the button Ok");
+$("#mapsTitle").attr("title","Click on the button to open a modal with a location inside an iFrame");
+$("#hobbies").attr("title","Select all your hobbies");
+
+function readSelect(){
+    var values = $(".domtopics").val();
+    $(".selectOutput").val(values)
+}
+
 function Login(){
     const e = "QA_Team@hexaware.com";
     const p = "Hexaware123";
@@ -26,16 +44,17 @@ function allowDrop(ev) {
   }
 
 function Validate() {
-    var password = document.getElementById("password").value;
-    var verify = document.getElementById("verifyPass").value;
+    var label = $("#valid").text("");
+    var password = $("#password").val();
+    var verify = $("#verifyPass").val();
 
     if (password == "" || verify == "") {
-        alert("empty input");
+        label.text("Empty values");
     } else {
         if (password == verify) {
-            alert("Password Matching");
+            label.text("Password Matched");
         } else {
-            alert("Password not match");
+            label.text("Password not match");
         }
     }
 }
@@ -74,3 +93,4 @@ document.getElementById("userData").addEventListener("submit", function (event) 
     }
     
 });
+
