@@ -25,15 +25,15 @@ function calculateDays() {
     if (days != "") {
         var fecha1 = moment(days);
         var fecha2 = moment(output);
-        var dif = fecha2.diff(fecha1,'days');
+        var dif = fecha2.diff(fecha1, 'days');
 
-        if(dif < 0)
+        if (dif < 0)
             dif = dif * -1;
 
         $("#selectedDate").text(dif + " days left for your birthday");
     }
     else
-     $("#selectedDate").text("Specify a date");
+        $("#selectedDate").text("Specify a date");
 
 }
 
@@ -124,18 +124,17 @@ function setResult(value) {
     document.getElementById('result').innerHTML = value;
 }
 function getResult() {
-    return(document.getElementById('result').innerHTML);
+    return (document.getElementById('result').innerHTML);
 }
-function add(key) { 
+function add(key) {
     var result = getResult();
-    if (result!='0' || isNaN(key)) setResult(result + key);
+    if (result != '0' || isNaN(key)) setResult(result + key);
     else setResult(key);
 }
 function calc() {
-    var result = eval(getResult()); 
+    var result = eval(getResult());
     setResult(result);
 }
-function del() { 
+function del() {
     setResult(0);
 }
-
