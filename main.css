@@ -125,3 +125,14 @@ header h1{
     max-width: 5%;
     margin-left: 50%;
 }
+
+table {
+    width: 100%;
+}
+table button {
+    width: 100%;
+    font-size: 150%;
+}
+.ac {
+    color: red;
+}

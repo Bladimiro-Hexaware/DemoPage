@@ -11,11 +11,40 @@
     <link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
     <script src="./boostrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./main.css" />
-    
+
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html">Exit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.seleniumhq.org/docs/">Selenium doc</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        User
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Create User</a>
+                        <a class="dropdown-item" href="#">Open new Window</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./index.html">Log out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <header>
 
         <h1 id="QATitle" data-toggle="tooltip">QA Demo Page</h1>
@@ -266,6 +295,64 @@
             <label id="selectedDate"></label>
             <div>
                 <img class="imgOk" onclick="calculateDays()" src="./svg/187-512.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="card w-75 cardS">
+        <div class="card-body">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                        aria-controls="home" aria-selected="true">Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                        aria-controls="profile" aria-selected="false">How to...</a>
+                </li>
+
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <table>
+                        <tr>
+                            <td colspan="4"><button id="result">0</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="add('1')">1</button></td>
+                            <td><button onclick="add('2')">2</button></td>
+                            <td><button onclick="add('3')">3</button></td>
+                            <td><button onclick="add('+')">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="add('4')">4</button></td>
+                            <td><button onclick="add('5')">5</button></td>
+                            <td><button onclick="add('6')">6</button></td>
+                            <td><button onclick="add('-')">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="add('7')">7</button></td>
+                            <td><button onclick="add('8')">8</button></td>
+                            <td><button onclick="add('9')">9</button></td>
+                            <td><button onclick="add('*')">*</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><button onclick="add('0')">0</button></td>
+                            <td colspan="3"><button onclick="add('/')">/</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button onclick="del()" class="ac">AC</button></td>
+                            <td><button onclick="add('.')">.</button></td>
+                            <td><button onclick="calc()">=</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <h5>Use xpath in selenium</h5>
+                    <iframe src="https://www.youtube.com/watch?v=As72m9qrAQ8" frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+
             </div>
         </div>
     </div>
