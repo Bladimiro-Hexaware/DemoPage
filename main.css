@@ -120,3 +120,8 @@ header h1{
     width: 75px;
     background-color: #94c1ff;
 }
+
+.imgOk{
+    max-width: 5%;
+    margin-left: 50%;
+}
