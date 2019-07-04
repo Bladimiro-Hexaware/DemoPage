@@ -40,9 +40,12 @@ header h1{
 }
 
 .btns{
-    position: absolute;
     right: 71px;
     top: 50%;
+}
+
+#password, #verifyPass{
+    width: 50%;
 }
 
 #FormSubmit{

@@ -90,8 +90,10 @@
     <div class="card w-75 cardS">
         <div class="card-body">
             <h5 id="validateTitle" data-toggle="tooltip" class="card-title">Validate Password</h5>
-            <input type="password" name="password" id="password">
-            <input type="password" name="verifyPass" id="verifyPass">
+            <div class="container">
+                <input type="password" name="password" id="password">
+                <input type="password" name="verifyPass" id="verifyPass">
+            </div>
             <button class="btn btn-primary submit" id="submit" onclick="Validate()" type="submit">Validate</button>
             <label id="valid"></label>
         </div>
